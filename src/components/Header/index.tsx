@@ -1,0 +1,44 @@
+import logo from "../../assets/images/logo-clara 1.png"
+import slogan from "../../assets/images/Vet à Bessa.png"
+import { Container, Cabecalho, LogoComSlogan, ListaMenu } from "./styles";
+
+const Header = () => {
+
+    return (
+        <Cabecalho>
+            <Container className="container">
+                <LogoComSlogan>
+                    <img src={logo} alt="logo" />
+                    <img src={slogan} alt="slogan" style={{marginLeft:"18.38px"}}/>
+                </LogoComSlogan>
+                <ListaMenu>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h3>Início</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>Sobre mim</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>Como funciona</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>Consulta</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </ListaMenu>
+            </Container>
+        </Cabecalho>
+    )
+}
+
+
+export default Header;

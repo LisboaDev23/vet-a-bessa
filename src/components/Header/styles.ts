@@ -3,6 +3,11 @@ import { cores } from "../../styles";
 
 export const Cabecalho = styled.header`
     background-color: ${cores.azulEscuro};
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
 `;
 export const Container = styled.div`
     display: flex;

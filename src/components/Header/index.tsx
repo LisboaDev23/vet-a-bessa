@@ -1,8 +1,12 @@
+import { useState } from "react";
 import logo from "../../assets/images/logo-clara 1.png"
 import slogan from "../../assets/images/Vet à Bessa.png"
-import { Container, Cabecalho, LogoComSlogan, ListaMenu } from "./styles";
+import { Container, Cabecalho, LogoComSlogan, ListaMenu, BotaoHamburguer } from "./styles";
 
 const Header = () => {
+
+    const [menuAberto, setMenuAberto] = useState(false);
+    const alternarMenu = () => setMenuAberto(!menuAberto);
 
     return (
         <Cabecalho>
@@ -11,7 +15,10 @@ const Header = () => {
                     <img src={logo} alt="logo" />
                     <img src={slogan} alt="slogan" style={{marginLeft:"18.38px"}}/>
                 </LogoComSlogan>
-                <ListaMenu>
+                <BotaoHamburguer onClick={alternarMenu}>
+                    ☰
+                </BotaoHamburguer>
+                <ListaMenu $menuAberto={menuAberto}>
                     <ul>
                         <li>
                             <a href="#">

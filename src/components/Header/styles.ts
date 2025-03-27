@@ -21,7 +21,7 @@ export const LogoComSlogan = styled.div`
         margin-left: 18.38px;
     }
 `;
-export const ListaMenu = styled.div`
+export const ListaMenu = styled.div<{ $menuAberto: boolean }>`
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -59,5 +59,34 @@ export const ListaMenu = styled.div`
         height: 2px;
         background-color:${cores.amareloClaro}; /* Cor do traço */
         transform: translateX(-50%);
+    }
+
+    @media (max-width: 768px) {
+        position: absolute;
+        top: 80px; /* Ajuste para ficar abaixo do header */
+        left: 0;
+        width: 100%;
+        background-color: ${cores.azulEscuro};
+        flex-direction: column;
+
+        ul {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        display: ${({ $menuAberto }) => ($menuAberto ? "flex" : "none")};
+    }
+`;
+
+export const BotaoHamburguer = styled.button`
+    display: none;
+    background: none;
+    border: none;
+    color: ${cores.amareloClaro};
+    font-size: 32px;
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+        display: block; 
     }
 `;

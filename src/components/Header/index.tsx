@@ -1,7 +1,13 @@
 import { useState } from "react";
 import logo from "../../assets/images/logo-clara 1.png"
 import slogan from "../../assets/images/Vet à Bessa.png"
-import { Container, Cabecalho, LogoComSlogan, ListaMenu, BotaoHamburguer } from "./styles";
+import { 
+    Container, 
+    Cabecalho,
+    LogoComSlogan,
+    ListaMenu,
+    BotaoHamburguer 
+} from "./styles";
 
 const Header = () => {
 
@@ -21,22 +27,22 @@ const Header = () => {
                 <ListaMenu $menuAberto={menuAberto}>
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#inicio">
                                 <h3>Início</h3>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#sobre-mim">
                                 <h3>Sobre mim</h3>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#como-funciona">
                                 <h3>Como funciona</h3>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#consulta">
                                 <h3>Consulta</h3>
                             </a>
                         </li>

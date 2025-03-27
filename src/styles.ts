@@ -21,13 +21,17 @@ export const GlobalCss = createGlobalStyle`
     list-style: none;
     }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     max-width: 1151px;
     width: 100%;
     margin: 0 auto;
   }
 
-    @media (max-width: ${dimensoes.mobile}) {
+  @media (max-width: ${dimensoes.mobile}) {
     .container {
       max-width: 86%;
     }
@@ -44,9 +48,5 @@ export const GlobalCss = createGlobalStyle`
       max-width: 93%;
     }
   }
-}
-@font-face {
-    font-family: 'Brasika';
-    src: url('/fonts/brasika-display-trial.woff2') format('opentype');
 }
 `;

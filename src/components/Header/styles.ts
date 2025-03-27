@@ -20,6 +20,12 @@ export const LogoComSlogan = styled.div`
     h1 {
         margin-left: 18.38px;
     }
+    
+    @media (max-width: 768px) {
+        img {
+            max-width: 110px;
+        }
+    }
 `;
 export const ListaMenu = styled.div<{ $menuAberto: boolean }>`
     display: flex;
@@ -61,9 +67,9 @@ export const ListaMenu = styled.div<{ $menuAberto: boolean }>`
         transform: translateX(-50%);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 836px) {
         position: absolute;
-        top: 80px; /* Ajuste para ficar abaixo do header */
+        top: 94px; /* Ajuste para ficar abaixo do header */
         left: 0;
         width: 100%;
         background-color: ${cores.azulEscuro};
@@ -74,7 +80,10 @@ export const ListaMenu = styled.div<{ $menuAberto: boolean }>`
             gap: 20px;
             padding: 20px 0;
         }
-        display: ${({ $menuAberto }) => ($menuAberto ? "flex" : "none")};
+        /* Suavização da abertura */
+        max-height: ${({ $menuAberto }) => ($menuAberto ? "300px" : "0")};
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out;
     }
 `;
 
@@ -86,7 +95,7 @@ export const BotaoHamburguer = styled.button`
     font-size: 32px;
     cursor: pointer;
 
-    @media (max-width: 768px) {
+    @media (max-width: 836px) {
         display: block; 
     }
 `;

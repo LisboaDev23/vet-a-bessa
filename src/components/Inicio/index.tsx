@@ -1,19 +1,26 @@
 import fraseInicio from "../../assets/images/atendimento-veterinario.png"
 import imagemInicio from "../../assets/images/imagem-inicio 1.png"
-import { ContainerInicio, Section } from "./styles";
+import { BotaoAgendeAqui, ContainerInicio, Section } from "./styles";
 
 export const Inicio = () => {
 
 
     return (
         <>
-        <Section>
+        <Section id="inicio">
             <ContainerInicio className="container">
-                <div style={{marginTop:"125px"}}>
-                    <img src={fraseInicio} />
+                <div className="divFrase">
+                    {/* <h4>Atendimento veterinario no conforto do seu lar.</h4>
+                    <br />
+                    <br />
+                    <h4>Trazendo mais segurança para seu pet</h4> */}
+                    <img src={fraseInicio} alt="fraseInicio"/>
+                    <a href="#">
+                        <BotaoAgendeAqui>Agende aqui!</BotaoAgendeAqui>
+                    </a>
                 </div>
-                <div>
-                    <img src={imagemInicio} />
+                <div className="imagemInicio">
+                    <img src={imagemInicio} alt="imagemInicio"/>
                 </div>
             </ContainerInicio>
         </Section>

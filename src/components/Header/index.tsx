@@ -27,7 +27,7 @@ const Header = () => {
                 <ListaMenu $menuAberto={menuAberto}>
                     <ul>
                         <li>
-                            <a href="#inicio">
+                            <a href="#">
                                 <h3>Início</h3>
                             </a>
                         </li>

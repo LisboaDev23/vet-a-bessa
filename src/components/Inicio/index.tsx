@@ -2,7 +2,7 @@ import fraseInicio from "../../assets/images/atendimento-veterinario.png"
 import imagemInicio from "../../assets/images/imagem-inicio 1.png"
 import { BotaoAgendeAqui, ContainerInicio, Section } from "./styles";
 
-export const Inicio = () => {
+const Inicio = () => {
 
 
     return (

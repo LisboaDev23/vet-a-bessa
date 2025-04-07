@@ -23,6 +23,7 @@ export const GlobalCss = createGlobalStyle`
 
 html {
     scroll-behavior: smooth;
+    background-color: ${cores.laranja};
 }
 
 .container {

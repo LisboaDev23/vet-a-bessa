@@ -32,6 +32,10 @@ export const ContainerInicio = styled.div`
         animation: fadeInUp 0.8s ease-in-out forwards;
     }
 
+    .imagemInicio {
+        height: 749.9px;
+    }
+
     .imagemInicio img {
         width: 100%;
         max-width: 500px; /* Controla o tamanho da imagem */

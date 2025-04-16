@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const cores = {
     amareloClaro: '#F8DCBF',
     azulEscuro: '#001F3D',
-    laranja: '#E87800'
+    laranja: '#E87800',
+    azulFonteClaro: '#004060'
 }
 
 export const dimensoes = {

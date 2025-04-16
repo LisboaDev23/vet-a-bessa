@@ -1,3 +1,4 @@
+import ComoFunciona from "./components/Como-Funciona"
 import Header from "./components/Header"
 import Inicio from "./components/Inicio"
 import SobreMim from "./components/Sobre-Mim"
@@ -12,6 +13,7 @@ function App() {
       <Header/>
       <Inicio/>
       <SobreMim/>
+      <ComoFunciona />
       <WhatsAppButton />
     </>
   )

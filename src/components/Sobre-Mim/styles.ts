@@ -33,11 +33,14 @@ export const ContainerDescricoes = styled.div`
 `;
 
 export const ContainerCuboInfos = styled.div`
-    padding: 24px;
+    padding: 40px;
     border: 2px solid ${cores.laranja};
     background-color: #FFFF;
 
     h3,p {
         color: ${cores.laranja};
+    }
+    h3 {
+        margin-bottom: 21px;
     }
 `;

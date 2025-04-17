@@ -1,4 +1,4 @@
-import { ComoFuncionaConteudo, SectionComoFunciona } from "./styles";
+import { Bloco, ComoFuncionaConteudo, SectionComoFunciona } from "./styles";
 
 const ComoFunciona = () => {
 
@@ -13,37 +13,32 @@ const ComoFunciona = () => {
                         seu dia a dia</strong> e, também, trazer uma <strong>maior bem-estar</strong> ao seu pet.
                         </p>
                         <p>Basta tirar qualquer dúvida pelo nosso Whatsapp
-                             <a target="_blank" href="https://wa.me/551185999831211?text=Ola!%20vim%20pelo%20seu%20site%20e%20queria%20mais%20informações">e agendar a consulta do seu baby!</a>
+                            <a target="_blank" href="https://wa.me/551185999831211?text=Ola!%20vim%20pelo%20seu%20site%20e%20queria%20mais%20informações"> e agendar a consulta do seu baby!</a>
                         </p>
                     </div>
                     <ComoFuncionaConteudo>
-                        <div className="col-esquerda">
-                            <img src="" alt="Ícone de Fale Conosco" />
-                        </div>
+                        <Bloco className="consulta-clinica">
+                            <img src="" alt="" />
+                            <h3>Consulta Clínica</h3>
+                            <p>Atendimento para cães e gatos.</p>
+                        </Bloco>
+                        
+                        <Bloco className="atendimento-silvestre">
+                            <img src="" alt="" />
+                            <h3>Atendimento Silvestre</h3>
+                            <p>Roedores, aves e répteis.</p>
+                        </Bloco>
 
-                        <div className="col-direita">
-                            <div className="bloco">
-                                <img src="" alt="Ícone de Fale Conosco" />
-                                <div>
-                                    <h3>Fale Comigo</h3>
-                                    <p>Estou aqui para esclarecer dúvidas e ajudar a cuidar do seu pet.</p>
-                                </div>
-                            </div>
-                            <div className="bloco">
-                                <img src="" alt="Ícone de Serviços" />
-                                <div>
-                                    <h3>Serviços Oferecidos</h3>
-                                    <p>Conheça os serviços disponíveis e escolha o melhor para as necessidades atuais do seu pet.</p>
-                                </div>
-                            </div>
-                            <div className="bloco">
-                                <img src="" alt="Ícone de Agendamento" />
-                                <div>
-                                    <h3>Agende uma Consulta</h3>
-                                    <p>Agende uma consulta veterinária domiciliar e proporcione o melhor cuidado para o seu animalzinho.</p>
-                                </div>
-                            </div>
-                        </div>
+                        <Bloco className="vacinas">
+                            <img src="" alt="" />
+                            <h3>Vacinas</h3>
+                            <p>Imunizações essenciais e reforços.</p>
+                        </Bloco>
+                        <Bloco className="cuidados-paliativos">
+                            <img src="" alt="" />
+                            <h3>Cuidados Paliativos</h3>
+                            <p>Tratamento para evitar qualquer tipo de problema que o pet venha a ter.</p>
+                        </Bloco>
                     </ComoFuncionaConteudo>
                 </div>
             </SectionComoFunciona>

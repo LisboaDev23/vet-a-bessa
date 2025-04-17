@@ -5,6 +5,7 @@ export const SectionComoFunciona = styled.section`
     text-align: center;
     font-family: 'Helvetica Neue', sans-serif;
     padding: 80px 20px;
+    background-color: ${cores.amareloClaro};
 
     h1 {
         font-size: 3rem;
@@ -19,7 +20,6 @@ export const SectionComoFunciona = styled.section`
         color: #333;
         max-width: 700px;
         margin: 0 auto 20px auto;
-        line-height: 1.6;
     }
 
     strong {
@@ -40,49 +40,58 @@ export const SectionComoFunciona = styled.section`
 `;
 
 export const ComoFuncionaConteudo = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-    margin-top:100px;
-
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      text-align: center;
+    display: flex;
+    gap: 10px;
+    max-width: 100%;    
+    justify-content: center;
+    h3 {
+        margin-bottom: 12px;
+        font-size: 14px;
     }
 
-    .col-esquerda img {
-        max-width: 100%;
+    .consulta-clinica {
+        border-radius: 20px;
+        background-color: ${cores.azulEscuro};
+
+        p, h3 {
+            color: #fff;
+        }
     }
 
-    .col-direita {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    .atendimento-silvestre {
+        border-radius: 20px;
+        background-color: #5E6C2A;
+
+        p, h3 {
+            color: #fff;
+        }
     }
 
-    .bloco {
-        display: flex;
-        align-items: flex-start;
-        gap: 20px;
-        background-color: #fdd9ac;
-        border: 1px solid #d8c1a3;
-        padding: 15px;
-        border-radius: 8px;
+    .cuidados-paliativos {
+        border-radius: 20px;
+        background-color: #1E574C;
 
-        img {
-        width: 40px;
-        height: 40px;
+        p, h3 {
+            color: #fff;
         }
+    }
 
-        h3 {
-        color: #d46c0a;
-        margin: 0 0 5px;
+    .vacinas {
+        background-color: ${cores.laranja};
+        border-radius: 20px;
+        
+        p, h3 {
+            color: #fff;
         }
+    }
 
-        p {
-        margin: 0;
-        color: #5a3921;
-        }
-  }
 `;
+
+export const Bloco = styled.div`
+    padding: 16px;
+    max-width: 180px;
+    p {
+        font-size: 11px;
+        margin-bottom: 0px;
+    }
+`;  

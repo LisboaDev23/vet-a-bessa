@@ -1,5 +1,5 @@
 import { Button } from "./styles";
-
+import whatsLogo from "../../assets/images/whats-logo.png"
 
 const WhatsAppButton = () => {
     return (
@@ -8,7 +8,7 @@ const WhatsAppButton = () => {
         target="_blank"
         aria-label="Fale conosco no WhatsApp"
       >
-        📞
+        <img src={whatsLogo} alt="whats-logo" />
       </Button>
     );
   };

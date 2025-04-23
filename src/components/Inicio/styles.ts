@@ -102,6 +102,9 @@ export const BotaoAgendeAqui = styled.button`
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa deslocada */
+    animation: fadeInUp 0.8s ease-in-out forwards;
 
     &:hover {
         background-color: #e67e00;

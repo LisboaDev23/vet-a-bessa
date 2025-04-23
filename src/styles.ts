@@ -4,7 +4,11 @@ export const cores = {
     amareloClaro: '#F8DCBF',
     azulEscuro: '#001F3D',
     laranja: '#E87800',
-    azulFonteClaro: '#004060'
+    azulFonteClaro: '#004060',
+    branco: '#fff',
+    verdeSilvestre: '#5E6C2A',
+    verdeCuidadosPaliativos: '#1E574C',
+    amarelo: '#ffff00'
 }
 
 export const dimensoes = {

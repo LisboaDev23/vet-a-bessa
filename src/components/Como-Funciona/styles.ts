@@ -17,7 +17,7 @@ export const SectionComoFunciona = styled.section`
 
     p {
         font-size: 1.1rem;
-        color: #333;
+        color: ${cores.azulEscuro};
         max-width: 700px;
         margin: 0 auto 20px auto;
     }
@@ -28,13 +28,13 @@ export const SectionComoFunciona = styled.section`
     }
 
     a {
-        color: #004060;
+        color: ${cores.azulFonteClaro};
         text-decoration: underline;
         font-weight: 500;
     }
 
     a:hover {
-        color: #0077aa;
+        color: ${cores.azulEscuro};
         text-decoration: none;
     }
 `;
@@ -44,6 +44,12 @@ export const ComoFuncionaConteudo = styled.div`
     gap: 10px;
     max-width: 100%;    
     justify-content: center;
+
+    img {
+        max-width: 88px;
+        max-height: 75px;
+    }
+
     h3 {
         margin-bottom: 12px;
         font-size: 14px;
@@ -54,25 +60,25 @@ export const ComoFuncionaConteudo = styled.div`
         background-color: ${cores.azulEscuro};
 
         p, h3 {
-            color: #fff;
+            color: ${cores.branco};
         }
     }
 
     .atendimento-silvestre {
         border-radius: 20px;
-        background-color: #5E6C2A;
+        background-color: ${cores.verdeSilvestre};
 
         p, h3 {
-            color: #fff;
+            color: ${cores.branco};
         }
     }
 
     .cuidados-paliativos {
         border-radius: 20px;
-        background-color: #1E574C;
+        background-color: ${cores.verdeCuidadosPaliativos};
 
         p, h3 {
-            color: #fff;
+            color: ${cores.branco};
         }
     }
 
@@ -81,7 +87,7 @@ export const ComoFuncionaConteudo = styled.div`
         border-radius: 20px;
         
         p, h3 {
-            color: #fff;
+            color: ${cores.branco};
         }
     }
 

@@ -1,8 +1,10 @@
 import { Bloco, ComoFuncionaConteudo, SectionComoFunciona } from "./styles";
+import logoPrancheta from '../../assets/images/logo-prancheta.png'
+import logoSilvestre from '../../assets/images/logo-silvestre.png'
+import logoVacina from '../../assets/images/logo-vacina.png'
+import logoCoracao from '../../assets/images/logo-coracao.png'
 
 const ComoFunciona = () => {
-
-
     return (
         <>
             <SectionComoFunciona id="como-funciona">
@@ -18,26 +20,26 @@ const ComoFunciona = () => {
                     </div>
                     <ComoFuncionaConteudo>
                         <Bloco className="consulta-clinica">
-                            <img src="" alt="" />
+                            <img src={logoPrancheta} alt="logo-prancheta"/>
                             <h3>Consulta Clínica</h3>
                             <p>Atendimento para cães e gatos.</p>
                         </Bloco>
                         
                         <Bloco className="atendimento-silvestre">
-                            <img src="" alt="" />
+                            <img src={logoSilvestre} alt="logo-silvestre"/>
                             <h3>Atendimento Silvestre</h3>
-                            <p>Roedores, aves e répteis.</p>
+                            <p>Roedores, lagomorfos, aves e répteis.</p>
                         </Bloco>
 
                         <Bloco className="vacinas">
-                            <img src="" alt="" />
+                            <img src={logoVacina} alt="logo-vacina" />
                             <h3>Vacinas</h3>
                             <p>Imunizações essenciais e reforços.</p>
                         </Bloco>
                         <Bloco className="cuidados-paliativos">
-                            <img src="" alt="" />
-                            <h3>Cuidados Paliativos</h3>
-                            <p>Tratamento para evitar qualquer tipo de problema que o pet venha a ter.</p>
+                            <img src={logoCoracao} alt="logo-coracao" />
+                            <h3>Cuidados Preventivos</h3>
+                            <p>Acompanhamento afim de evitar qualquer tipo de problema que o pet venha a ter.</p>
                         </Bloco>
                     </ComoFuncionaConteudo>
                 </div>

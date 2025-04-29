@@ -30,7 +30,7 @@ const SobreMim = () => {
                                     <h3>ME CHAMO IASMIM CASTRO BESSA</h3>
                                     <div className="texto">
                                         <strong>
-                                            O nome é um trocadilho mesmo: ser veterinária à "Bessa" — porque quando eu cuido, é com tudo. Com carinho, atenção e amor de verdade. Quero ser aquela vet que você e seu pet confiam de olhos fechados.
+                                            O nome é um trocadilho mesmo: ser veterinária à "Bessa", porque quando eu cuido, é com tudo. Com carinho, atenção e amor de verdade. Quero ser aquela vet que você e seu pet confiam de olhos fechados.
                                         </strong>
                                     </div>
                                 </ContainerCuboInfos>

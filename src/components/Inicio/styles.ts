@@ -6,7 +6,7 @@ export const Section = styled.section`
     padding: 120px 20px 0 20px;
 
     @media (min-width: ${dimensoes.tablet}) {
-        padding-top: 90px;
+        padding-top: 110px;
     }
 
     @media (max-width: ${dimensoes.mobile}) {
@@ -36,16 +36,10 @@ export const ContainerInicio = styled.div`
         height: 600.9px;
     }
 
-    @media (max-width: ${dimensoes.mobile}) {
-        .imagemInicio {
-            height: 374.9px;
-        }
-    }
-
     .imagemInicio img {
         width: 100%;
         max-width: 500px; /* Controla o tamanho da imagem */
-        height: auto;
+        height: 600px;
         opacity: 0; /* Suavização */
         transform: translateY(20px); /* Animação */
         animation: fadeInUp 1s ease-in-out forwards;
@@ -76,25 +70,19 @@ export const ContainerInicio = styled.div`
         }
     }
 
-    /* Ajustes para celulares */
-    @media (max-width: ${dimensoes.mobile}) {
-        .divFrase img {
-            max-width: 300px; /* Ajusta a imagem no mobile */
-        }
+        @media (max-width: ${dimensoes.mobile}) {
 
-        .imagemInicio img {
-            max-width: 300px;
-        }
-    }
-
-    /* Ajustes para telas muito pequenas */
-    @media (max-width: 480px) {
         .divFrase img {
             max-width: 250px; /* Ajusta ainda mais no mobile pequeno */
         }
 
         .imagemInicio img {
             max-width: 250px;
+            height: auto;
+        }
+
+        .imagemInicio {
+            height: 374.9px;
         }
     }
 `;

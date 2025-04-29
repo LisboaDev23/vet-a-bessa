@@ -41,11 +41,6 @@ const Header = () => {
                                 <h3>Como funciona</h3>
                             </a>
                         </li>
-                        <li>
-                            <a href="#consulta">
-                                <h3>Consulta</h3>
-                            </a>
-                        </li>
                     </ul>
                 </ListaMenu>
             </Container>

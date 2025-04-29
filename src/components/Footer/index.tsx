@@ -1,38 +1,23 @@
-import { ContainerFooter } from "./styles";
+import { ContainerFooter, Rodape } from "./styles";
 import whatsLogo from "../../assets/images/whats-logo.png"
+import instaLogo from "../../assets/images/instagram-logo.png"
+import faceLogo from "../../assets/images/facebook-logo.png"
 
 const Footer = () => {
 
     return (
         <>
-        <footer>
+        <Rodape>
             <ContainerFooter className="container">
-                <div className="menu">
-                    <h3>Menu</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Início</a>
-                        </li>
-                        <li>
-                            <a href="#sobre-mim">Sobre mim</a>
-                        </li>
-                        <li>
-                            <a href="#como-funciona">Como funciona</a>
-                        </li>
-                        <li>
-                            <a href="#consulta">Agende uma consulta</a>
-                        </li>
-                    </ul>
-                </div>
                 <div className="redes-sociais">
                     <h3>Redes Sociais</h3>
                     <ul>
                         <li>
-                            <img src="" alt="instagram" />
+                            <img id="insta" src={instaLogo} alt="instagram" />
                             <a href="https://www.instagram.com/vetabessa?igsh=MWx2Z2h6Zjd1bTMxNA==">@vetabessa</a>
                         </li>
                         <li>
-                            <img src="" alt="facebook" />
+                            <img id="face" src={faceLogo} alt="facebook" />
                             <a href="https://www.facebook.com/share/18xS6qqzkt/">vetabessa</a>
                         </li>
                     </ul>
@@ -47,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
             </ContainerFooter>
-        </footer>
+        </Rodape>
         </>
     )
 }

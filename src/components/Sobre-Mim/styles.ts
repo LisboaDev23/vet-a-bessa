@@ -5,7 +5,6 @@ export const Section = styled.section`
     background-color: ${cores.azulEscuro};
     padding-bottom: 100px;
 `;
-
 export const ContainerSobreMim = styled.div`
     
 `;

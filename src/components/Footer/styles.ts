@@ -1,10 +1,15 @@
 import styled from "styled-components";
 import { cores } from "../../styles";
 
+export const Rodape = styled.footer`
+    background-color: ${cores.laranja};
+`;
+
 export const ContainerFooter = styled.div`
     padding-top: 35px;
     padding-bottom: 35px;
     display: flex;
+    justify-content: center;
 
     img {
         max-height: 40px;
@@ -23,15 +28,6 @@ export const ContainerFooter = styled.div`
 
     h3 {
             margin-bottom: 24px;
-        }
-
-
-    .menu {
-        margin-right: 140px;
-
-        li {
-            margin-bottom: 10px;
-        }
     }
 
     .redes-sociais {
@@ -39,6 +35,19 @@ export const ContainerFooter = styled.div`
 
         li {
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            
+            #insta {
+                max-height: 26px;
+                max-width: 26px;
+            }
+             #face {
+                max-height: 18px;
+                max-width: 18px;
+                margin-left: 3px;
+                margin-right: 6px;
+             }
         }
     }
 

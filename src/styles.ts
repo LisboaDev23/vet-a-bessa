@@ -28,7 +28,7 @@ export const GlobalCss = createGlobalStyle`
 
 html {
     scroll-behavior: smooth;
-    background-color: ${cores.laranja};
+    scroll-padding-top: 100px;
 }
 
 .container {

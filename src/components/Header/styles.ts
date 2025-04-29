@@ -1,11 +1,12 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { cores, dimensoes } from "../../styles";
 
 export const Cabecalho = styled.header`
     background-color: ${cores.azulEscuro};
     position: fixed;
     top: 0; 
     left: 0;
+    right: 0;
     width: 100%; 
     z-index: 1000; 
 `;
@@ -21,9 +22,9 @@ export const LogoComSlogan = styled.div`
         margin-left: 18.38px;
     }
     
-    @media (max-width: 768px) {
+    @media (max-width: ${dimensoes.mobile}) {
         img {
-            max-width: 110px;
+            max-width: 70px;
         }
     }
 `;
@@ -63,13 +64,13 @@ export const ListaMenu = styled.div<{ $menuAberto: boolean }>`
         left: 50%;
         width: 100%; /* Tamanho da linha */
         height: 2px;
-        background-color:${cores.amareloClaro}; /* Cor do traço */
+        background-color:${cores.amareloClaro}; 
         transform: translateX(-50%);
     }
 
     @media (max-width: 836px) {
         position: absolute;
-        top: 94px; /* Ajuste para ficar abaixo do header */
+        top: 80px;
         left: 0;
         width: 100%;
         background-color: ${cores.azulEscuro};

@@ -3,11 +3,14 @@ import { cores, dimensoes } from "../../styles";
 
 export const Section = styled.section`
     background-color: ${cores.laranja};
-    margin-top: 120px;
-    padding: 0px 20px;
+    padding: 120px 20px 0 20px;
 
-    @media (max-width: ${dimensoes.tablet}) {
-        padding: 30px 20px;
+    @media (min-width: ${dimensoes.tablet}) {
+        padding-top: 90px;
+    }
+
+    @media (max-width: ${dimensoes.mobile}) {
+        padding-top: 40px;
     }
 `;
 
@@ -27,9 +30,16 @@ export const ContainerInicio = styled.div`
         width: 100%;
         max-width: 600px; /* Tamanho máximo da imagem */
         height: auto;
-        opacity: 0; /* Começa invisível */
-        transform: translateY(20px); /* Começa deslocada */
-        animation: fadeInUp 0.8s ease-in-out forwards;
+    }
+
+    .imagemInicio {
+        height: 600.9px;
+    }
+
+    @media (max-width: ${dimensoes.mobile}) {
+        .imagemInicio {
+            height: 374.9px;
+        }
     }
 
     .imagemInicio img {
@@ -51,7 +61,7 @@ export const ContainerInicio = styled.div`
     /* Ajustes para tablets */
     @media (max-width: 1024px) {
         flex-direction: column;
-        padding-top: 20px;
+        padding-top: 80px;
 
         .divFrase img {
             max-width: 400px; /* Reduz a imagem no tablet */
@@ -98,6 +108,9 @@ export const BotaoAgendeAqui = styled.button`
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    opacity: 0; /* Começa invisível */
+    transform: translateY(20px); /* Começa deslocada */
+    animation: fadeInUp 0.8s ease-in-out forwards;
 
     &:hover {
         background-color: #e67e00;

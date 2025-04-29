@@ -3,7 +3,12 @@ import { createGlobalStyle } from "styled-components";
 export const cores = {
     amareloClaro: '#F8DCBF',
     azulEscuro: '#001F3D',
-    laranja: '#E87800'
+    laranja: '#E87800',
+    azulFonteClaro: '#004060',
+    branco: '#fff',
+    verdeSilvestre: '#5E6C2A',
+    verdeCuidadosPaliativos: '#1E574C',
+    amarelo: '#ffff00'
 }
 
 export const dimensoes = {
@@ -23,6 +28,11 @@ export const GlobalCss = createGlobalStyle`
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+
+    @media (max-width: ${dimensoes.mobile}) {
+      scroll-padding-top: 100px;
+    }
 }
 
 .container {

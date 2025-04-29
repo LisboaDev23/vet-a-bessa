@@ -8,7 +8,7 @@ import { useInView } from "react-intersection-observer";
 const Inicio = () => {
 
     const {ref, inView} = useInView({
-        triggerOnce: false,
+        triggerOnce: true,
         threshold: 0.2
     });
     return (
@@ -22,10 +22,6 @@ const Inicio = () => {
             >
                 <ContainerInicio className="container">
                     <div className="divFrase">
-                        {/* <h4>Atendimento veterinario no conforto do seu lar.</h4>
-                        <br />
-                        <br />
-                        <h4>Trazendo mais segurança para seu pet</h4> */}
                         <img src={fraseInicio} alt="fraseInicio"/>
                         <a href="https://wa.me/551185999831211?text=Ola!%20vim%20pelo%20seu%20site%20e%20queria%20mais%20informações">
                             <BotaoAgendeAqui>Agende aqui!</BotaoAgendeAqui>

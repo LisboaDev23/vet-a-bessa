@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { cores, dimensoes } from "../../styles";
 
 export const SectionComoFunciona = styled.section`
     text-align: center;
@@ -7,12 +7,18 @@ export const SectionComoFunciona = styled.section`
     padding: 80px 20px;
     background-color: ${cores.amareloClaro};
 
+    img {
+        max-width: 250px;
+        max-height: 250px;
+        margin-bottom: 15px;
+    }
+
     h1 {
         font-size: 3rem;
         font-weight: 800;
         color: ${cores.azulFonteClaro};
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        margin-bottom: 40px;
+        margin-bottom: 10px;
     }
 
     p {
@@ -37,6 +43,18 @@ export const SectionComoFunciona = styled.section`
         color: ${cores.azulEscuro};
         text-decoration: none;
     }
+
+    @media (max-width: ${dimensoes.mobile}) {
+        padding: 20px 20px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 16px
+        }
+    } 
 `;
 
 export const ComoFuncionaConteudo = styled.div`
@@ -44,6 +62,14 @@ export const ComoFuncionaConteudo = styled.div`
     gap: 10px;
     max-width: 100%;    
     justify-content: center;
+
+    div {
+        transition: transform 0.3s ease;
+    }
+
+    div:hover {
+        transform: scale(1.2);
+    }
 
     img {
         max-width: 88px;
@@ -89,6 +115,11 @@ export const ComoFuncionaConteudo = styled.div`
         p, h3 {
             color: ${cores.branco};
         }
+    }
+
+    @media (max-width: ${dimensoes.mobile}) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
 `;

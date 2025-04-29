@@ -1,4 +1,4 @@
-import { ContainerFooter, Rodape } from "./styles";
+import { Commerce, ContainerFooter, Rodape } from "./styles";
 import whatsLogo from "../../assets/images/whats-logo.png"
 import instaLogo from "../../assets/images/instagram-logo.png"
 import faceLogo from "../../assets/images/facebook-logo.png"
@@ -32,6 +32,9 @@ const Footer = () => {
                     </div>
                 </div>
             </ContainerFooter>
+            <Commerce className="container">
+                <p>Desenvolvido por Gabriel Lisboa</p>
+            </Commerce>
         </Rodape>
         </>
     )

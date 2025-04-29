@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { cores, dimensoes } from "../../styles";
 
 export const Rodape = styled.footer`
     background-color: ${cores.laranja};
@@ -42,12 +42,12 @@ export const ContainerFooter = styled.div`
                 max-height: 26px;
                 max-width: 26px;
             }
-             #face {
+            #face {
                 max-height: 18px;
                 max-width: 18px;
                 margin-left: 3px;
                 margin-right: 6px;
-             }
+            }
         }
     }
 
@@ -56,5 +56,36 @@ export const ContainerFooter = styled.div`
             display: flex;
             align-items: center;
         }
+    }
+
+    @media (max-width: ${dimensoes.mobile}) {
+        display: block;
+        text-align: center;
+
+        .redes-sociais {
+            margin-right: 0px;
+            ul {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    padding: 5px;
+                }
+            }
+        }
+
+        .contato {
+            div {
+                justify-content: center;
+            }
+        }
+    }
+`;
+
+export const Commerce = styled.div`
+    text-align: center;
+    p {
+        font-size: 12px;
+        color: ${cores.branco};
     }
 `;

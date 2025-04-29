@@ -20,7 +20,7 @@ const SobreMim = () => {
             >
                 <ContainerSobreMim className="container">
                     <DivTexto>
-                        <h1>Conheça Quem É A Responsável Por Cuidar De Parte Importante Da Sua Família</h1>
+                        <h1>Oi, prazer! Deixe-me contar quem sou eu e por que seu pet já é especial para mim</h1>
                     </DivTexto>
                     <div>
                         <DivFotoSobre>
@@ -30,9 +30,7 @@ const SobreMim = () => {
                                     <h3>ME CHAMO IASMIM CASTRO BESSA</h3>
                                     <div className="texto">
                                         <strong>
-                                            Daí que veio a ideia do nome, como um trocadilho. <br /> 
-                                            Acredito que a vida possa sim ser mais leve, se possível, transmitirei isso a você 
-                                            e espero me tornar a veterinária da sua família.
+                                            O nome é um trocadilho mesmo: ser veterinária à "Bessa" — porque quando eu cuido, é com tudo. Com carinho, atenção e amor de verdade. Quero ser aquela vet que você e seu pet confiam de olhos fechados.
                                         </strong>
                                     </div>
                                 </ContainerCuboInfos>
@@ -40,8 +38,8 @@ const SobreMim = () => {
                                     <h3>SOU VETERINÁRIA SAÚDE!</h3>
                                     <div className="texto">
                                         <strong>
-                                            Prefiro trabalhar de forma focada na prevenção do que remediar a situação, então irei fazer de 
-                                            tudo para que seu pet não necessite de maiores intervenções.
+                                            A saúde do seu pet é meu compromisso.
+                                            Acredito que prevenir é o melhor cuidado, por isso, estou aqui para garantir que ele tenha uma vida longa e feliz, sem surpresas no caminho.
                                         </strong>
                                     </div>
                                 </ContainerCuboInfos>
@@ -49,8 +47,7 @@ const SobreMim = () => {
                                     <h3>APAIXONADA POR TODOS OS ANIMAIS!</h3>
                                     <div className="texto">
                                         <strong>
-                                            Por mais que eu tenha um grande fascínio pelos pets não convencionais e exóticos, adoro conhecer e
-                                            aprender a respeito de todos os animais domésticos.
+                                            Minha paixão vai além dos pets tradicionais, sou fascinada por todos, incluindo os silvestres e exóticos. Cada animal tem sua beleza e história, e adoro aprender e cuidar de todos, sem exceção.
                                         </strong>
                                     </div>
                                 </ContainerCuboInfos>

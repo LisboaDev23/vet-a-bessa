@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { dimensoes } from "../../styles";
 
 export const Button = styled.a`
   position: fixed;
@@ -17,4 +18,11 @@ export const Button = styled.a`
     max-width: 150px;
     max-height: 150px;
   }
+
+  @media (max-width: ${dimensoes.mobile}) {
+      img {
+        max-width: 60px;
+        max-height: 80px;
+    }
+    }
 `;

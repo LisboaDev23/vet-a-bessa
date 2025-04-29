@@ -29,6 +29,10 @@ export const GlobalCss = createGlobalStyle`
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+
+    @media (max-width: ${dimensoes.mobile}) {
+      scroll-padding-top: 100px;
+    }
 }
 
 .container {

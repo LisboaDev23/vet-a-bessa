@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { cores } from "../../styles";
+import { cores, dimensoes } from "../../styles";
 
 export const Section = styled.section`
     background-color: ${cores.azulEscuro};
@@ -19,7 +19,12 @@ export const DivTexto = styled.div`
     }
     max-width: 802px;
     margin: 0 auto;
-    --margin-bottom: 62px;
+
+    @media (max-width: ${dimensoes.mobile}) {
+        h1 {
+            font-size: 16px;
+        }
+    }
 `;
 
 export const ContainerDescricoes = styled.div`
@@ -29,6 +34,10 @@ export const ContainerDescricoes = styled.div`
     
     div {
         text-align: center;
+    }
+
+    @media (max-width: ${dimensoes.mobile}) {
+        display: block;
     }
 `;
 
@@ -53,7 +62,7 @@ export const ContainerCuboInfos = styled.div`
     }
 
     .texto {
-        margin: 0 auto; /* centraliza horizontalmente */
+        margin: 0 auto;
         padding: 20px;
         text-align: left;
         color: ${cores.azulEscuro};
@@ -61,5 +70,20 @@ export const ContainerCuboInfos = styled.div`
 
     strong {
         font-size: 18px;
+    }
+
+    @media (max-width: ${dimensoes.mobile}) {
+        padding: 10px;
+        border: 2px solid ${cores.azulEscuro};
+        h3 {
+            font-size: 12px;
+        }
+        .texto {
+            padding: 0px;
+        }
+
+        strong {
+            font-size: 12px;
+        }
     }
 `;

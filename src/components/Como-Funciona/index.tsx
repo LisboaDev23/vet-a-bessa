@@ -3,6 +3,7 @@ import logoPrancheta from '../../assets/images/logo-prancheta.png'
 import logoSilvestre from '../../assets/images/logo-silvestre.png'
 import logoVacina from '../../assets/images/logo-vacina.png'
 import logoCoracao from '../../assets/images/logo-coracao.png'
+import fotoOzzy from '../../assets/images/foto-ozzy.png'
 import {motion} from 'framer-motion';
 import { useInView } from "react-intersection-observer";
 
@@ -25,12 +26,14 @@ const ComoFunciona = () => {
                     <div className="container">
                         <h1>Como Funciona?</h1>
                         <div>
+                            <img src={fotoOzzy} alt="como-funciona" />
                             <p>Ofereço atendimento veterinário <strong>personalizado e individualizado</strong>, no <strong>conforto do seu lar</strong>, <strong>afim de facilitar o
                             seu dia a dia</strong> e, também, trazer uma <strong>maior bem-estar</strong> ao seu pet.
                             </p>
                             <p>Basta tirar qualquer dúvida pelo nosso Whatsapp
                                 <a target="_blank" href="https://wa.me/551185999831211?text=Ola!%20vim%20pelo%20seu%20site%20e%20queria%20mais%20informações"> e agendar a consulta do seu baby!</a>
                             </p>
+                            
                         </div>
                         <ComoFuncionaConteudo>
                             <Bloco className="consulta-clinica">
